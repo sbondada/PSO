@@ -1,0 +1,13 @@
+This folder contains the list of all the PSO programs for effort estimation using the cocomo model.
+there are four types of models:
+   1) tuning parameters a,b : cocomo_ab_pc.c
+   2) tuning parameters a,b,c : cocomo_abc_pc.c
+   3) tuning parameters a,b,c,d : cocomo_abcd_pc.c
+
+There are input files:
+  1) 10 values without methodology : ab_ip
+  2) 18 values without methodology : ip_18
+  3) 13 values with methodology : ip_meth_13
+  4) 10 values with methodology : ip_meth_10
+
+to use any of these files in the program , modify the variable "noi" in the init() function of the program. the number should be set according to the no of projects. The files  3 and 4 cannot be used for cocomo_ab.c .

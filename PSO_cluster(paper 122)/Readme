@@ -1,0 +1,23 @@
+This is a Readme file that outlines the procedure to use the psocluster program.
+------------------------------------------------------------------------------------------------------
+
+  The program for the implementation of the cluster based PSO for Software Effort estimation is in psocluster.c .
+  The input is taken from the cocomo81 dataset.
+  The sample 45 values on which the program was tested is given in psocluster_ip .
+  The output file that we obtained is given in psocluster_op.
+
+------------------------------------------------------------------------------------------------------
+
+To test the program on more data sets, change the val variable in the psocluster.c program.
+Change it to the number of values you want to enter.
+The values should be entered in the format of:
+
+size measuredeffort eaf
+
+Also based on the values the ranges of velocities of va,vb,vc should be modified in the functions init, updatea , updateb and updatec .
+
+The number of iterations can be varied by changing the noi variable in the init() function ( default taken as 1000).
+The number of particles can be varied by changing the nop variable in the init() function (default taken as 20).
+To assign different number of clusters ( default taken as 3 clusters) change the variable kmeans in the global variable declaration.
+
+---------------------------------------------------------------------------------------------------------

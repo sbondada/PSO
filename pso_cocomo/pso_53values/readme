@@ -1,0 +1,13 @@
+This folder contains the list of all the PSO programs for effort estimation using the cocomo model.
+there are four types of models:
+   1) tuning parameters a,b : cocomo_ab_53.c
+   2) tuning parameters a,b,c : cocomo_abc_53.c
+   3) tuning parameters a,b,c with c1, c2 changed: cocomo_abc_ch_53.c
+   4) tuning parameters a,b with c1, c2 changed: cocomo_ab_ch_53.c
+
+There are input files:
+  1) 53 values : 53_ip
+  2) 20 values : seg_53 9 with val set to 20)
+  3) 25 values : seg_53( with val set to 25)
+  
+To use any of these files in the program , modify the variable "val" in the init() function of the program. The number should be set according to the no of projects.
